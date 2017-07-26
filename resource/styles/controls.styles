@@ -23,19 +23,21 @@ controls.styles
 		installborder2=	" 70  82 126 255"	// corner
 		installtxt=		"230 242 251 255"	// text
 
-		playfill1=		" 30 116  52 255"	// fill
-		playfill2=		" 50 136  72 255"	// fill
-		playfill3=		" 70 176  92 255"	// hover fill
-		playborder1=	" 65 171  87 255"	// border
-		playborder2=	" 50 136  52 255"	// corner
-		playtxt=		"230 251 242 255"	// text
+		// inverted Green<->Blue channels to obtain some royal blue
+		playfill1=		" 30  52 116 255"	// fill
+		playfill2=		" 50  72 136 255"	// fill
+		playfill3=		" 70  92 176 255"	// hover fill
+		playborder1=	" 65  87 171 255"	// border
+		playborder2=	" 50  52 136 255"	// corner
+		playtxt=		"230 242 251 255"	// text
 
-		buyfill1=		"122  91   2 255"	// fill
-		buyfill2=		"142 111  22 255"	// fill
-		buyfill3=		"162 131  42 255"	// hover fill
-		buyborder1=		"197 166  77 255"	// border
-		buyborder2=		"142 111  22 255"	// corner
-		buytxt=			"251 231 172 255"	// text
+		// inverted Red<->Green channel to obtain some green-ish
+		buyfill1=		" 91 122   2 255"	// fill
+		buyfill2=		"111 142  22 255"	// fill
+		buyfill3=		"131 162  42 255"	// hover fill
+		buyborder1=		"166 197  77 255"	// border
+		buyborder2=		"111 142  22 255"	// corner
+		buytxt=			"231 251 172 255"	// text
 	}
 	  
 	styles

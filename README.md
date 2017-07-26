@@ -4,6 +4,7 @@ Use at your own risk.
 
 <h2>What's modified in Compact-Redux :</h2>
 - Library/Details view : game's background image made transparently visible behind texts (as per official skin)
+- UI/Menu and Main Tabs : Friends menu added back, main tabs moved up one row (to titlebar, right of menus), and some colors tweaked
 
 Original ReadMe follows :
 

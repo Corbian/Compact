@@ -726,7 +726,7 @@
 	
 	layout
 	{
-		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=23 }
+		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=1 }
 		
 		place { control="UIStatusPanel" width=200 height=21 align=right margin-top=45 margin-right=26 }
 		

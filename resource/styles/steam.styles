@@ -36,7 +36,7 @@ steam.styles
 		
 		FrameBG1="17 16 14 255"					// background in most frames/lists
 		FrameBG2="7 6 4 255"
-		FrameBG2_trans="3 2 0 155"
+		FrameBG2_trans="7 6 4 64"				// was unused and set to "3 2 0 155"
 		FrameBG3="27 26 24 255"
 		
 		FrameShade="15 14 12 255"
@@ -88,6 +88,7 @@ steam.styles
 		
 		TitleText="166 164 161 255"
 		TitleTextFocus="239 236 233 255"
+		TitleTextHover="230 242 251 255"		// new bright light blue
 		
 		ChatText1="166 164 161 255"
 		ChatText2="106 104 101 255"
@@ -187,7 +188,7 @@ steam.styles
 		buttontextactive=TextHover
 		
 		ButtonBorder="112 109 105 255"
-		ButtonBorderPage="128 124 120 255"
+		ButtonBorderPage="128 124 120 155"
 		ButtonBorderDisabled="77 75 72 255"
 		ButtonBorderDisabled2="67 65 63 255"  //cornering pixels
 		ButtonBorderActive="140 135 129 255"
@@ -1687,12 +1688,12 @@ steam.styles
 		
 	 	"MenuBar MenuButton:frameFocus" 
 		{
-			textcolor="TitleTextFocus"
+			textcolor="TitleText"	// was "TitleTextFocus"
 		}
 		
 		"MenuBar MenuButton:frameFocus:hover" 
 		{
-			textcolor="TitleTextFocus"
+			textcolor="TitleTextHover"		// was "TitleTextFocus"
 			bgcolor=none
 			font-style="outerglow"
 			font-outerglow-color="focus"
@@ -1712,22 +1713,22 @@ steam.styles
 		
 		MenuButton
 		{
+			textcolor="TitleText"	// was "label"
 			font-family=basefont
 			font-size=13
 			font-weight=400
-			textcolor="label"
 			bgcolor="none"
 			render_bg {}
 		}  
 		
 		MenuButton:hover
 		{
-			textcolor="texthover"
+			textcolor="TitleTextHover"		// was "texthover"
 		}
 		
 		MenuButton:selected
 		{
-			textcolor="texthover"
+			textcolor="TitleTextFocus"		// was "texthover"
 		}
 		
 		MenuItem
@@ -2545,7 +2546,7 @@ steam.styles
 			font-family=basefont
 			font-size=13
 			font-weight=100
-			textcolor="labelfocus"
+			textcolor="TitleText"		// was "labelfocus"
 			font-style="lowercase"
 		}
 		
@@ -2554,7 +2555,7 @@ steam.styles
 			font-family=basefont
 			font-size=13
 			font-weight=100
-			textcolor="label"
+			textcolor="TitleText"		// was "label"
 			font-style="lowercase"
 		}
 		
@@ -2563,7 +2564,7 @@ steam.styles
 			font-family="basefont"
 			font-size="13"
 			font-weight="400"
-			textcolor="white"
+			textcolor="TitleTextHover"		// was "white"
 			font-style="lowercase"
 		}   
 		
@@ -2572,7 +2573,7 @@ steam.styles
 			font-family=basefont
 			font-size=13
 			font-weight=100
-			textcolor="labelfocus"
+			textcolor="TitleTextHover"		// was "labelfocus"
 			font-style="lowercase"
 		}
 		
@@ -2974,17 +2975,29 @@ steam.styles
 		
 		URLLabelSimple
 		{
-			textcolor="labelfocus"
+			textcolor="TitleText"		// was "labelfocus"
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
 			font-weight=400
+		//	font-style=regular		// added
+		}
+		
+		URLLabelSimple [$OSX]
+		{
+			textcolor="TitleText"		// was "labelfocus"
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-weight=400
+		//	font-style=regular		// added
+			inset="0 1 0 0"
 		}
 		
 		URLLabelSimple:Hover
 		{
-			textcolor="white"
-			font-style=underline
+			textcolor="TitleTextHover"		// was "white"
+		//	font-style=underline
 		}  
 		
 		// Steam-specific styles
