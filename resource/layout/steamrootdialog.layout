@@ -766,41 +766,41 @@
 	{
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=0 margin-top=1 }
 		
-		place { control="UIStatusPanel" width=200 height=21 align=right margin-top=45 margin-right=26 }
-		
 		place [!$OSX] { control="MenuBar" align=top margin-top=0 }
-			
-		place { control="ParentalLockButton,InboxButton,view_friends,startvr,exitvr" align=right margin-top=20 margin-right=36 height=26 spacing=3 }			//reserve 24+3 pixels for BPM button
+        
+		// reserve 24+3 pixels for BPM button ---> no, it seems to be ok now when placing controls from right to left ;-)
 		
-		place [!$OSX] { control="universe_label" align=right margin-top=26 end-right="account_balance" margin-right=9 }	
-		place [!$OSX] { control="account_balance" align=right margin-top=26 end-right="ParentalLockButton" margin-right=9 }	
-		place [$OSX] { control="account_balance, universe_label" align=right margin-top=26 end-right="ParentalLockButton" margin-right=9 spacing=5 }	
-
-		place [!$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=6 margin-top=16 }
-		place [$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=6 margin-top=16 }
-	
-		place [!$OSX] { control="exitvr" end-right="fullscreen" align=right margin-right=6 margin-top=16 }
-		place [$OSX] { control="exitvr" end-right="fullscreen" align=right margin-right=6 margin-top=16 }
-
-		place { control="SupportAlert" align=right end-right="universe_label" margin-top=20 margin-right=16 height=26 }
-		
-		place [$WIN32]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=2 margin-right=2 spacing=-8 }
+		place [$WIN32] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=2 margin-right=2 spacing=-8 }
 		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=2 margin-right=2 spacing=-8 }
 
+		place [!$OSX] { control="fullscreen" align=right y=0 width=30 height=20 margin-right=-3 margin-top=1 region="bigpicture" end-right="frame_minimize"}
+		 place [$OSX] { control="fullscreen" align=right y=0 width=30 height=20 margin-right=8 margin-top=1 region="bigpicture" end-right="frame_minimize"}
+
+		place [!$OSX] { control="account_URL" align=right margin-top=22 margin-right=33 }	
+		place [!$OSX] { control="account_balance,account_balance_seperator" align=right margin-top=26 end-right="account_URL" margin-right=3 spacing=3 }	
+
+		place [$OSX] { control="account_balance, account_balance_seperator, account_URL" align=right margin-top=26 margin-right=33 spacing=5 }	
+
+        place { control="universe_label,ParentalLockButton,InboxButton,view_friends,startvr,exitvr" align=right end-right="fullscreen" margin-right=8 margin-top=-1 spacing=3 }
+
+		place { control="FriendPanel" y=0 x=0 width=48 height=48 align=right margin-right=0 margin-top=-2 end-right="universe_label" }
+
+		place { control="UIStatusPanel" width=150 height=21 align=right margin-top=1 margin-right=-2 end-right="FriendPanel" }
+		
+		place { control="SupportAlert" align=right end-right="FriendPanel" margin-top=22 margin-right=3 height=26 }
+		
 		region { name=bottom align=bottom width=max height=16 }
 			
  		// the title bar is missing, so increase the size of the grip
-		place { control="frame_captiongrip" margin=2 width=max height=104 }
+		//place { control="frame_captiongrip" margin=2 width=max height=104 }
+		place { control="frame_captiongrip" margin=2 width=max height=40 }
 		//place { control="frame_grip" margin=0 width=2 height=2 }
 		
-		place [!$OSX] { control="fullscreen" align=right y=22 height=20 spacing=0 margin-right=0 margin-top=1 width=30 region="bigpicture"}
-		place [$OSX] { control="fullscreen" align=right y=22 height=20 spacing=0 margin-right=8 margin-top=1 width=30 region="bigpicture"}
-
+		//place { control="add_game" align=right end-right="ParentalLockButton" margin-top=2 margin-right=4 height=26 }
 		
 		//hidden elements
-		place { control="account_URL,add_game,FriendPanel,online_friends" align=right x=9999 height=0 }
-
-		place [!$OSX] { control="account_balance_seperator" align=right x=9999 width=0 }	
-		place [$OSX] { control="account_balance_seperator" align=right x=9999 width=0 }	
+		//place { control="account_URL,add_game,FriendPanel,online_friends" align=right x=9999 height=0 }
+		place { control="add_game,online_friends" align=right x=9999 height=0 }
+        
 	}
 }
