@@ -591,159 +591,169 @@
 		
 		CUINavButtonNew
 		{
-			textcolor="133 176 223 255"
+			textcolor="TitleText"		// was "133 176 223 255"
 			font-weight=700
 			font-size=16
 		}
 
 		CUINavButton  [!$OSX]
 		{
-			textcolor="TextGlowSelected2"
+			textcolor="TitleText"		// was "TextGlowSelected2"
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
 			font-weight=700 
+			font-style="uppercase"		// added back
 			inset="1 -3 0 0"
 
-			render_bg
-			{	
-				0="fill(x0-5, y0+1, x1+6, y1-3, FrameBG3 )"
-		        1="fill(x0-8, y1-1, x1+9, y1, ExBorder )"	// bottom
-			}
+		//	render_bg
+		//	{	
+		//		0="fill(x0-5, y0+1, x1+6, y1-3, FrameBG3 )"
+		//		1="fill(x0-8, y1-1, x1+9, y1, ExBorder )"	// bottom
+		//	}
 		}
 
 		CUINavButton  [$OSX]
 		{
-			textcolor="TextGlowSelected2"
+			textcolor="TitleText"		// was "TextGlowSelected2"
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
 			font-weight=700 
+			font-style="uppercase"		// added back
 			inset="1 -3 0 0"
 			
-			render_bg
-			{	
-				0="fill(x0-5, y0+1, x1+6, y1-3, FrameBG3 )"
-		        1="fill(x0-8, y1-1, x1+9, y1, ExBorder )"	// bottom
-			}
+		//	render_bg
+		//	{	
+		//		0="fill(x0-5, y0+1, x1+6, y1-3, FrameBG3 )"
+		//		1="fill(x0-8, y1-1, x1+9, y1, ExBorder )"	// bottom
+		//	}
 		}
 		
 		CUINavButton:disabled
 		{
-			textcolor="TextDisabled"
+			textcolor="TitleText"		// was "TextDisabled"
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
 			font-weight=700 
+			font-style="uppercase"		// added back
 		}
 		
 		CUINavButton:hover
 		{
-			textcolor="texthover"
+			textcolor="TitleTextHover"		// was "texthover"
 			inset="1 -3 0 0"
 			
-			render_bg
-			{
-				0="gradient(x0-4, y0+1, x1+5, y1-1, Titlebar, MainFrameBG2 )"
-		        
-		        1="fill(    x0-5, y0  , x1+6, y0+1, ExBorder )"				// top
-		        2="fill(    x0-8, y1-1, x1+9, y1  , ExBorder )"				// bottom
-		        3="gradient(x0-5, y0+1, x0-4, y1-1, ExBorder, BtnBorder5 )"	// left
-				4="gradient(x1+5, y0+1, x1+6, y1-1, ExBorder, BtnBorder5 )"	// right
-			}
+		//	render_bg
+		//	{
+		//		0="gradient(x0-4, y0+1, x1+5, y1-1, Titlebar, MainFrameBG2 )"
+		//
+		//		1="fill(    x0-5, y0  , x1+6, y0+1, ExBorder )"				// top
+		//		2="fill(    x0-8, y1-1, x1+9, y1  , ExBorder )"				// bottom
+		//		3="gradient(x0-5, y0+1, x0-4, y1-1, ExBorder, BtnBorder5 )"	// left
+		//		4="gradient(x1+5, y0+1, x1+6, y1-1, ExBorder, BtnBorder5 )"	// right
+		//	}
 		}
 		
 		CUINavButton:disabled:hover
 		{
-			textcolor="TextDisabled"
+			textcolor="TitleText"		// was "TextDisabled"
 		}
 		
 		CUINavButton:selected
 		{
-			textcolor="white"
+			textcolor="TitleTextFocus"		// was "white"
 			bgcolor=none
 			font-family=basefont
 			font-size=13
 			font-weight=700 
-			font-style="normal"
+			font-style="uppercase"		// was "normal"
 			inset="1 -3 0 0"
 			
-			render_bg
-			{
-				0="gradient(x0-4, y0+1, x1+5, y1, MainFrameBG3, MainFrameBG1 )"
-		        
-		        1="fill(x0-5, y0  , x1+6   , y0+1, ExBorder )"	// top
-		        2="fill(x0-5, y0+1, x0-4   , y1-1, ExBorder )"	// left
-				3="fill(x1+5, y0+1, x1+6   , y1-1, ExBorder )"	// right
-		        4="fill(x1+5, y1-1, x1+3000, y1  , ExBorder )"	// bottom-right
-		        5="fill(x0-8, y1-1, x0-4   , y1  , ExBorder )"	// bottom-left
-			}
+		//	render_bg
+		//	{
+		//		0="gradient(x0-4, y0+1, x1+5, y1, MainFrameBG3, MainFrameBG1 )"
+		//
+		//		1="fill(x0-5, y0  , x1+6   , y0+1, ExBorder )"	// top
+		//		2="fill(x0-5, y0+1, x0-4   , y1-1, ExBorder )"	// left
+		//		3="fill(x1+5, y0+1, x1+6   , y1-1, ExBorder )"	// right
+		//		4="fill(x1+5, y1-1, x1+3000, y1  , ExBorder )"	// bottom-right
+		//		5="fill(x0-8, y1-1, x0-4   , y1  , ExBorder )"	// bottom-left
+		//	}
 		}
 
+		CUINavButton:selected:hover		// added
+		{
+			textcolor="TitleTextHover"		// was equal to CUINavButton:selected
+		}
+		
 		CUINavButton2  [!$OSX]
 		{
-			textcolor="TextGlowSelected2"
+			textcolor="TitleText"		// was "TextGlowSelected2"
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
 			font-weight=400 
+			font-style="uppercase"		// added back
 			inset="1 0 0 0"
 			minimum-width=45
 			padding-left=2
 			padding-right=2
 
-			render_bg
-			{
-				//0="fill(x0-5, y0+1, x1+6, y1-3, FrameBG3 )"
-				0="fill(x0-5, y0+1, x1+6, y1-3, red )"
-		        1="fill(x0-8, y1-1, x1+9, y1, ExBorder )"	// bottom
-			}
+		//	render_bg
+		//	{
+		//		//0="fill(x0-5, y0+1, x1+6, y1-3, FrameBG3 )"
+		//		0="fill(x0-5, y0+1, x1+6, y1-3, red )"
+		//		1="fill(x0-8, y1-1, x1+9, y1, ExBorder )"	// bottom
+		//	}
 		}
 
 		CUINavButton2  [$OSX]
 		{
-			textcolor="TextGlowSelected2"
+			textcolor="TitleText"		// was "TextGlowSelected2"
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
 			font-weight=400 
+			font-style="uppercase"		// added back
 			inset="1 0 0 0"
 			
-			render_bg
-			{	
-				0="fill(x0-5, y0  , x1+6, y1-3, FrameBG3 )"
-				
-		        1="fill(x0-8, y1-1, x1+9, y1  , ExBorder )"	// bottom
-			}
+		//	render_bg
+		//	{	
+		//		0="fill(x0-5, y0  , x1+6, y1-3, FrameBG3 )"
+		//		
+		//		1="fill(x0-8, y1-1, x1+9, y1  , ExBorder )"	// bottom
+		//	}
 		}
 
 
 		CUINavButton2:hover
 		{
-			textcolor="texthover"
+			textcolor="TitleTextHover"		// was "texthover"
 			inset="1 0 0 0"
-			font-style="outerglow"
+			font-style="outerglow,uppercase"	// was "outerglow"
 			
-			render_bg
-			{
-		        0="gradient(x0, y0+3, x1+2, y1-3, Titlebar, MainFrameBG2 )"
-			}
+		//	render_bg
+		//	{
+		//		0="gradient(x0, y0+3, x1+2, y1-3, Titlebar, MainFrameBG2 )"
+		//	}
 		}
 		
 		CUINavButton2:selected
 		{
-			textcolor="white"
+			textcolor="TitleTextFocus"		// was "white"
 			bgcolor=none
 			font-family=basefont
 			font-size=13
 			font-weight=400 
-			font-style="normal"
+			font-style="uppercase"		// was "normal"
 			inset="1 0 0 0"
 			
-			render_bg
-			{
-				0="gradient(x0, y0+3, x1+2, y1-3, MainFrameBG3, MainFrameBG1 )"
-			}
+		//	render_bg
+		//	{
+		//		0="gradient(x0, y0+3, x1+2, y1-3, MainFrameBG3, MainFrameBG1 )"
+		//	}
 		}
 
 		CUINavigatorPanel

@@ -106,7 +106,7 @@
 			"ControlName"	"Label"
 			"fieldName"		"account_balance_seperator"
 			"labelText"		"|"
-			style="online_friends"
+			style="AccountBalanceSeparatorStyle"
 		}
 		
 		account_balance
@@ -115,7 +115,7 @@
 			"fieldName"		"account_balance"
 			"labelText"		""
 			"URLText"		"steam://url/StoreWallet/"
-			style="URLLabelSimple2"
+			style="AccountBalanceStyle"		// was "URLLabelSimple2"
 		}
 		
 		universe_label
@@ -138,7 +138,7 @@
 	{    
 		AccountBalanceStyle
 		{
-		      textcolor="labelfocus"
+		      textcolor="TitleText"		// was "labelfocus"
 		      bgcolor="none"
 		      font-family=basefont
 		      font-size=13
@@ -148,7 +148,7 @@
 
 		AccountBalanceStyle [$OSX]
 		{
-			textcolor="labeldisabled"
+			textcolor="TitleText"		// was "labeldisabled"
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
@@ -159,10 +159,31 @@
     
 		AccountBalanceStyle:Hover
 		{
-			textcolor="white"
-			font-style=underline
+			textcolor="TitleTextHover"
+		//	font-style=underline
+		}
+
+		AccountBalanceStyle:selected		// added
+		{
+			textcolor="TitleTextFocus"		// was "white"
+		//	font-style=underline
 		}
 		
+		AccountBalanceStyle:disabled		// added
+		{
+			textcolor="TitleText"		// was "TextDisabled"
+		}
+
+		AccountBalanceSeparatorStyle		// added
+		{
+            textcolor="TitleText"
+            font-family=basefont
+            font-size=13
+            font-weight=400
+            font-style=regular
+            inset="0 0 0 0"
+		}
+
 		RootMenu
 		{
 			bgcolor="none"
@@ -677,25 +698,42 @@
 			textcolor=inbox_active_text
 		}
 	
-		AccountURLStyle
+		AccountURLStyle		// was empty style
 		{
+		      textcolor="TitleText"
+		      bgcolor="none"
+		      font-family=basefont
+		      font-size=13
+		      font-weight=400
+		      font-style=regular
 		}
 		
+		AccountURLStyle [$OSX]		// added
+		{
+			textcolor="TitleText"		// was "labeldisabled"
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-weight=400
+			font-style=regular
+			inset="0 1 0 0"
+		}
+    
 		AccountURLStyle:hover
 		{
-			textcolor=white
-			font-style=underline
+			textcolor="TitleTextHover"		// was "white"
+		//	font-style=underline
 		}
 		
 		AccountURLStyle:selected
 		{
-			textcolor=white
-			font-style=underline
+			textcolor="TitleTextFocus"		// was "white"
+		//	font-style=underline
 		}
 		
 		AccountURLStyle:disabled
 		{
-			textcolor="TextDisabled"
+			textcolor="TitleText"		// was "TextDisabled"
 		}
 	}
 
