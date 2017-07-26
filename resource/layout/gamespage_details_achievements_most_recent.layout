@@ -21,11 +21,11 @@
 		
 		Tooltip.Anchor=Parent
 		
-		PrgrsBar1="124 122 119 255"						// all button colours
-		PrgrsBar2="135 132 129 255"						// all button colours
-		PrgrsBar3="147 145 142 255"						// all button colours
-		PrgrsBar4="158 156 153 255"						// all button colours
-		PrgrsBar5="166 164 161 255"						// all button colours
+		PrgrsBar1="124 122 119 155"						// all button colours
+		PrgrsBar2="135 132 129 155"						// all button colours
+		PrgrsBar3="147 145 142 155"						// all button colours
+		PrgrsBar4="158 156 153 155"						// all button colours
+		PrgrsBar5="166 164 161 155"						// all button colours
 	}
 	
 	styles

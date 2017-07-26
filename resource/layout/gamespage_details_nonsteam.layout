@@ -21,16 +21,15 @@
 			render_bg
 			{     
 				// background fill
-				0="fill( x0+1, y0+1, x1-1, y1-1, FrameBG2 )"
+				0="fill( x0+1, y0+1, x1-1, y1-1, FrameBG2_trans )"
                 
-           		2="image( x0+1, y0+1, x0+262, y0+72, graphics/libdet_corner_1 )"
+           		1="image( x0+1, y0+1, x0+262, y0+72, graphics/libdet_corner_1_trans )"
 
 				// lines around header
-				3="gradient_horizontal( x0+1, y0, x1-1, y0+1, ExBorderLight, ExBorderLowLight )"  // top
-				
-				8="gradient( x0, y0, x0+1, y1, ExBorderLight, ExBorderLowLight )"  // left
-				10="fill( x1-1, y0, x1, y1, ExBorderLowLight )"  // right
-				9="fill( x0+1, y1-1, x1, y1, ExBorderLowLight )"  // bottom
+				2="gradient_horizontal( x0+1, y0, x1-1, y0+1, ExBorderLight, ExBorderLowLight )"  // top
+				3="gradient( x0, y0, x0+1, y1, ExBorderLight, ExBorderLowLight )"  // left
+			//	4="fill( x1-1, y0, x1, y1, ExBorderLowLight )"  // right
+			//	5="fill( x0+1, y1-1, x1, y1, ExBorderLowLight )"  // bottom
 			}
 		}
 

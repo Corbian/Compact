@@ -58,7 +58,7 @@
 				// background fill
 				0="fill( x0+1, y0+1, x1-1, y1-1, FrameBG2 )"
                 
-           		1="image( x0+1, y0+1, x0+262, y0+98, graphics/libdet_corner )"
+           		1="image( x0+1, y0+1, x0+262, y0+98, graphics/libdet_corner_trans )"
 
 				// lines around
 				2="gradient_horizontal( x0+1, y0, x1-1, y0+1, ExBorderLight, ExBorderLowLight )"  // top

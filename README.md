@@ -1,3 +1,12 @@
+<h1>This is NOT the official repository for the Steam Compact skin</h1>
+This -Redux repo include some modifications not tested on MacOS and Linux.
+Use at your own risk.
+
+<h2>What's modified in Compact-Redux :</h2>
+- Library/Details view : game's background image made transparently visible behind texts (as per official skin)
+
+Original ReadMe follows :
+
 <h2>Installation instructions</h2>
 Place the directory in \Steam\skins\. After you’ve extracted the contents of the archive you go to <i>Settings</i> › <i>Interface</i> and select the Compact skin.
 
