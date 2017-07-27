@@ -11,6 +11,7 @@ Use at your own risk.
 - Fonts : Updated 'Liberation Sans' to v2.00.1, licensed under SIL OFL v1.1 instead of GNU GPL v2
 - Fonts : made and used 'Liberation Sans Digits Only' to account for the infamous ellipsis
 - Fonts : added 'Alphabet4 SmallCaps', in Library/Details for games names and categories
+- Graphics : added missing light blue tint when hovering the 3 leftmost titlebar buttons
 
 Original ReadMe follows :
 

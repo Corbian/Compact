@@ -218,7 +218,7 @@
 			textcolor="TitleTextHover"
 			render_bg
 			{
-				0="image( x0+1, y0+4, x1, y1, graphics/icon_collapse_over )"
+				0="image( x0+1, y0+4, x1, y1, graphics/icon_collapse_over_0 )"
 			}
 		}	
 		
@@ -227,7 +227,7 @@
 			textcolor="TitleTextFocus"
 			render_bg
 			{
-				0="image( x0+1, y0+4, x1, y1, graphics/icon_collapse_over )"
+				0="image( x0+1, y0+4, x1, y1, graphics/icon_collapse_over_0 )"
 			}
 		}	
 		
@@ -369,7 +369,7 @@
 			textcolor="TitleTextHover"
 			render_bg
 			{
-				0="image( x0+1, y0+4, x1, y1, graphics/icon_button_friends_2 )"
+				0="image( x0+1, y0+4, x1, y1, graphics/icon_button_friends_3 )"
 			}
 		}
 		
@@ -378,7 +378,7 @@
 			textcolor="TitleTextFocus"
 			render_bg
 			{
-				0="image( x0+1, y0+4, x1, y1, graphics/icon_button_friends_2 )"
+				0="image( x0+1, y0+4, x1, y1, graphics/icon_button_friends_3 )"
 			}
 		}
 		
@@ -599,7 +599,7 @@
 			textcolor=white
 			render_bg 
 			{
-				0="image( x1-20, y0+5, x1, y1, graphics/notification_2 )"
+				0="image( x1-20, y0+5, x1, y1, graphics/notification_5 )"
 			}
 		}
 
@@ -608,7 +608,7 @@
 			textcolor=white
 			render_bg 
 			{
-				0="image( x1-20, y0+5, x1, y1, graphics/notification_2 )"
+				0="image( x1-20, y0+5, x1, y1, graphics/notification_5 )"
 			}
 		}
 		
