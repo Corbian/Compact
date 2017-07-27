@@ -8,6 +8,7 @@ Use at your own risk.
 - UI/Colors : modifications of tab appearence, they look more like menus now, and a hover effect on menus, they look more like tabs now
 - UI/Top-Right Corner : buttons layout redone, added back Steam account name, and the avatar image
 - UI/Top-Right Corner : fixed friends buttons (whole corner layout redone), added number of online friends and add game '+' button
+- Fonts : Updated 'Liberation Sans' to v2.00.1, licensed under SIL OFL v1.1 instead of GNU GPL v2
 
 Original ReadMe follows :
 
