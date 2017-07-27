@@ -10,6 +10,7 @@ Use at your own risk.
 - UI/Top-Right Corner : fixed friends buttons (whole corner layout redone), added number of online friends and add game '+' button
 - Fonts : Updated 'Liberation Sans' to v2.00.1, licensed under SIL OFL v1.1 instead of GNU GPL v2
 - Fonts : made and used 'Liberation Sans Digits Only' to account for the infamous ellipsis
+- Fonts : added 'Alphabet4 SmallCaps', in Library/Details for games names and categories
 
 Original ReadMe follows :
 

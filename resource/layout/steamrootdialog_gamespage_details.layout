@@ -127,11 +127,14 @@
 			}
 		}
 
-		
+		// this definition adds/overwrites the one in 'steam.styles'
 		ListPanelSectionHeader
 		{     
 			inset="2 0 0 0"
 			textcolor=label
+			font-family="Alphabet4 SmallCaps"		// was unspecified (presumably herited from 'Label')
+		//	font-weight=400
+			font-size=16
 			render_bg
 			{
 				0="fill( x0+1, y1-2, x0+60, y1-1, focus4  )"

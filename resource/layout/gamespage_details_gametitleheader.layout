@@ -31,10 +31,10 @@
 		{
 			padding-bottom=0
 			padding-top=1
-			font-size=24
-			textcolor=Text
-			font-family=basefontheader
-			font-weight=400 
+			font-size=28		// was 24
+			textcolor="TitleTextFocus"		// was Text
+			font-family="Alphabet4 SmallCaps"		//was basefontheader
+			font-weight=700		// was 400 
 			bgcolor=none
 		}
 	}
