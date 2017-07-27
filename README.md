@@ -7,6 +7,7 @@ Use at your own risk.
 - UI/Menu and Main Tabs : Friends menu added back, main tabs moved up one row (to titlebar, right of menus), and some colors tweaked
 - UI/Colors : modifications of tab appearence, they look more like menus now, and a hover effect on menus, they look more like tabs now
 - UI/Top-Right Corner : buttons layout redone, added back Steam account name, and the avatar image
+- UI/Top-Right Corner : fixed friends buttons (whole corner layout redone), added number of online friends and add game '+' button
 
 Original ReadMe follows :
 

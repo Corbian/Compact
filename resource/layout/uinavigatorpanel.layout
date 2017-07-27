@@ -65,6 +65,12 @@
 			style="CuiNavButton"
 		}
 
+		"label_news"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_news"
+			style="CuiNavButton"
+		}
 		"label_community"
 		{
 			"ControlName"		"Label"
@@ -858,7 +864,7 @@
 		place [!$OSX] { control="label_library_show,label_library_zoom,label_zoom_separator,label_library_view" x=99999 y=0 height=0 }
 		 place [$OSX] { control="label_library_show,label_library_zoom,label_zoom_separator,label_library_view" x=99999 height=0 width=0 }
 
-		// content pages
+		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
 		place { control=DownloadsPage 			width=max height=max margin-top=0 margin-left=2 margin-right=1  margin-bottom=3 start=phonereminderbar dir=down }
 		place { control=ScreenshotsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0  margin-bottom=0 start=phonereminderbar dir=down }
 		place { control=GamesPage_List 			width=max height=max margin-top=0 margin-left=1 margin-right=0  margin-bottom=0 start=phonereminderbar dir=down }
