@@ -9,6 +9,7 @@ Use at your own risk.
 - UI/Top-Right Corner : buttons layout redone, added back Steam account name, and the avatar image
 - UI/Top-Right Corner : fixed friends buttons (whole corner layout redone), added number of online friends and add game '+' button
 - Fonts : Updated 'Liberation Sans' to v2.00.1, licensed under SIL OFL v1.1 instead of GNU GPL v2
+- Fonts : made and used 'Liberation Sans Digits Only' to account for the infamous ellipsis
 
 Original ReadMe follows :
 

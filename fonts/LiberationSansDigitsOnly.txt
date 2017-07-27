@@ -1,0 +1,40 @@
+'Liberation Sans Digits Only' fonts set
+is a subset made of 'Liberation Sans'
+with FontForge.github.io ver. 2016-10-04 :
+
+- digits U+0030 to U+0039 where untouched
+
+- every glyph above U+0255 was nuked
+
+- from U+0000 to U+0255, each existing
+  glyph (except digits) was nuclear nuked,
+  then radioactivity was eliminated by
+  replacing them all by a null glyph with
+  zero width (else font rendering engines
+  substitute the missing glyphs by thoses
+  in the default system font, which is
+  not the intended behavior)
+
+- kerning and pairing tables for CJK
+  and Hebrew where removed for a
+  whopping 5kb size reduction on
+  the 4 font files
+
+'Liberation Sans' fonts are licensed
+under SIL OFL v1.1, hence these derivative
+fonts fall under the very same license.
+
+The present notice is unlicensed,
+except the following 2 restrictions :
+- this notice shall not be kept without
+  the 4 LiberationSansDigitsOnly-*.ttf files ;
+- the original 'Liberation Sans' fonts
+  must also be present alongside.
+
+LiberationSansDigitsOnly.txt
+LiberationSansDigitsOnly-Regular.ttf
+LiberationSansDigitsOnly-Bold.ttf
+LiberationSansDigitsOnly-BoldItalic.ttf
+LiberationSansDigitsOnly-Italic.ttf
+
++C 2017-07-27

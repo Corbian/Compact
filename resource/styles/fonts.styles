@@ -2,10 +2,11 @@ fonts.styles
 {
 	colors
 	{
-		basefont="Tahoma"
-		basefontbold="Arial Bold"
+		basefont="Liberation Sans"		// was "Tahoma"
+		basefontbold="Liberation Sans Bold"		// was "Arial Bold"
+		basefontnum="Liberation Sans Digits Only"		// added
 		basefontalt="Arial"
-		basefonthead="Verdana"
+		basefonthead="Liberation Sans"		// was "Verdana"
 		basefontheader="Arial"
 		basefontsmall="Small Fonts"
 
