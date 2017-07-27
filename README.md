@@ -12,6 +12,7 @@ Use at your own risk.
 - Fonts : made and used 'Liberation Sans Digits Only' to account for the infamous ellipsis
 - Fonts : added 'Alphabet4 SmallCaps', in Library/Details for games names and categories
 - Graphics : added missing light blue tint when hovering the 3 leftmost titlebar buttons
+- UI/Titlebar : fixed vertical alignment between left, middle and right labels/buttons
 
 Original ReadMe follows :
 
