@@ -1695,7 +1695,7 @@ steam.styles
 		{
 			textcolor="TitleTextHover"		// was "TitleTextFocus"
 			bgcolor=none
-			font-style="outerglow"
+			font-style="outerglow;uppercase"	// was "outerglow"
 			font-outerglow-color="focus"
 			font-outerglow-offset=4
 			font-outerglow-filtersize=5
@@ -1705,7 +1705,7 @@ steam.styles
 		{
 			textcolor="TitleTextFocus"
 			bgcolor=none
-			font-style="outerglow"
+			font-style="outerglow;uppercase"	// was "outerglow"
 			font-outerglow-color="focus"
 			font-outerglow-offset=4
 			font-outerglow-filtersize=5
@@ -1716,8 +1716,9 @@ steam.styles
 			textcolor="TitleText"	// was "label"
 			font-family=basefont
 			font-size=13
-			font-weight=400
+			font-weight=650		// was 400
 			bgcolor="none"
+			font-style="uppercase"
 			render_bg {}
 		}  
 		

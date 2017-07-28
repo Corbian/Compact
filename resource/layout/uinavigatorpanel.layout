@@ -189,8 +189,7 @@
 			font-size=13
 			textcolor="Text"
 			font-weight=400
-			inset-left=4
-			inset-top=1
+			padding-left=4		// was inset-
 			bgcolor="none"
 			selectedtextcolor="white"
 			selectedbgcolor="TextSelectedBG"
@@ -219,6 +218,7 @@
 			font-size=13
 			font-weight=400
 			textcolor="text"
+			inset-top=1
 		}
 		
 		LibrarySearch:empty
@@ -247,7 +247,7 @@
 		LibrarySearchIcon
 		{
 			bgcolor="none"
-			inset="-2 3 0 0"
+			inset="-2 2 0 0"
 			render_bg={}
 			image="graphics/icon_button_search"
 			padding-left=0
@@ -257,7 +257,7 @@
 		LibrarySearchIcon:disabled
 		{
 			bgcolor="none"
-			inset="-2 3 0 0"
+			inset="-2 2 0 0"
 			render_bg={}
 			image="none"
 			padding-left=0
@@ -569,6 +569,7 @@
 			selectedtextcolor="TextEntrySelected"
 			selectedbgcolor="TextSelectedBG"
 			shadowtextcolor="Text"	// this is the cursor color
+			inset-top=1
 			render {}			
 		}
 
@@ -598,7 +599,7 @@
 		CUINavButtonNew
 		{
 			textcolor="TitleText"		// was "133 176 223 255"
-			font-weight=700
+			font-weight=650		// was 700
 			font-size=16
 		}
 
@@ -608,7 +609,7 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
-			font-weight=700 
+			font-weight=650		// was 700 
 			font-style="uppercase"		// added back
 			inset="1 -3 0 0"
 
@@ -625,7 +626,7 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
-			font-weight=700 
+			font-weight=650		// was 700 
 			font-style="uppercase"		// added back
 			inset="1 -3 0 0"
 			
@@ -642,7 +643,7 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
-			font-weight=700 
+			font-weight=650		// was 700 
 			font-style="uppercase"		// added back
 		}
 		
@@ -650,6 +651,11 @@
 		{
 			textcolor="TitleTextHover"		// was "texthover"
 			inset="1 -3 0 0"
+			font-style="outerglow;uppercase"	// was missing
+			// unified glow settings with the MenuButton from 'steam.styles'
+			font-outerglow-color="focus"
+			font-outerglow-offset=4
+			font-outerglow-filtersize=5
 			
 		//	render_bg
 		//	{
@@ -673,9 +679,13 @@
 			bgcolor=none
 			font-family=basefont
 			font-size=13
-			font-weight=700 
-			font-style="uppercase"		// was "normal"
+			font-weight=650		// was 700 
+			font-style="outerglow;uppercase"		// was "normal"
 			inset="1 -3 0 0"
+			// unified glow settings with the MenuButton from 'steam.styles'
+			font-outerglow-color="focus"
+			font-outerglow-offset=4
+			font-outerglow-filtersize=5
 			
 		//	render_bg
 		//	{
@@ -692,6 +702,10 @@
 		CUINavButton:selected:hover		// added
 		{
 			textcolor="TitleTextHover"		// was equal to CUINavButton:selected
+			// unified glow settings with the MenuButton from 'steam.styles'
+			font-outerglow-color="focus"
+			font-outerglow-offset=4
+			font-outerglow-filtersize=5
 		}
 		
 		CUINavButton2  [!$OSX]
@@ -700,7 +714,7 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
-			font-weight=400 
+			font-weight=650		// was 400 
 			font-style="uppercase"		// added back
 			inset="1 0 0 0"
 			minimum-width=45
@@ -721,7 +735,7 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=13
-			font-weight=400 
+			font-weight=650		// was 400 
 			font-style="uppercase"		// added back
 			inset="1 0 0 0"
 			
@@ -739,6 +753,10 @@
 			textcolor="TitleTextHover"		// was "texthover"
 			inset="1 0 0 0"
 			font-style="outerglow,uppercase"	// was "outerglow"
+			// unified glow settings with the MenuButton from 'steam.styles'
+			font-outerglow-color="focus"
+			font-outerglow-offset=4
+			font-outerglow-filtersize=5
 			
 		//	render_bg
 		//	{
@@ -752,9 +770,13 @@
 			bgcolor=none
 			font-family=basefont
 			font-size=13
-			font-weight=400 
-			font-style="uppercase"		// was "normal"
+			font-weight=650		// was 400 
+			font-style="outerglow;uppercase"		// was "normal"
 			inset="1 0 0 0"
+			// unified glow settings with the MenuButton from 'steam.styles'
+			font-outerglow-color="focus"
+			font-outerglow-offset=4
+			font-outerglow-filtersize=5
 			
 		//	render_bg
 		//	{
@@ -823,19 +845,19 @@
 	
 	layout
 	{
-		place { control="label_store,label_library,label_community,label_me,label_console" x=265 y=3 spacing=19 margin-left="9" height=20 } 
+		place { control="label_store,label_library,label_community,label_me,label_console" x=306 y=3 spacing=20 margin-left="9" height=20 } 
 		place { control="label_community_new" start="label_console" x="9999" width=0 height=0 }
 
 		place { control="library_music_player_icon" align=right height=16 width=16 y=23 margin-right=8 }
 
 		// same margin-right as URLBar -- shown in a strange place...
-		place { control="PageLoadThrobber" align=right y=21 height=20 width=20 margin-right=292 }
+		//place { control="PageLoadThrobber" align=right y=21 height=20 width=20 margin-right=292 }
 
 		place [!$OSX] { control="back,forward" align=left y=22 height=19 width=20 spacing=0 margin-left=3 }
 		place [$OSX] { control="back,forward" align=left y=22 height=19 width=20 spacing=0 margin-left=3 }
 
-		// dunno why 'PageLoadThrobber' isn't here ?.?
-		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left x=46 y=21 height=20 width=max spacing=4 margin-left=3 margin-right=292 }
+		// added 'PageLoadThrobber' here
+		place { control="refresh,stop,PageLoadThrobber,URLStatusImage,EVCert,URLBar" align=left x=46 y=21 height=20 width=max spacing=4 margin-left=3 margin-right=292 }
 
  		place { control="library_zoom" width=82 height=16 y=25  }
 
@@ -843,8 +865,8 @@
 		place { control="subnavgroup_library" align=left y=20 height=22 width=max margin-left=47 margin-right=140 }
 
 		place { control="library_search" width=150 }
-		place [!$OSX] { control="label_search_icon,library_search" align=left y=20 height=20 x=51 }
-		 place [$OSX] { control="label_search_icon,library_search" align=left y=20 height=20 x=51 }
+		place [!$OSX] { control="label_search_icon,library_search" align=left y=20 height=20 x=49 }
+		 place [$OSX] { control="label_search_icon,library_search" align=left y=20 height=20 x=49 }
 
 	    region { name="dropdown" width=90 x=226 y=21  height=20 }
 		place { control="library_filters" align=left spacing=1 region="dropdown" }

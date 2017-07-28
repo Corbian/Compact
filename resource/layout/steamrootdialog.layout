@@ -202,7 +202,7 @@
 		{
 			font-size=1
 			font-size=1 [$OSX]
-			font-family=basefont
+			font-family=basefontnum		// was basefont
 			textcolor="TitleText"
 		//	padding-right=30
 		//	padding-left=17
@@ -243,6 +243,7 @@
 		CSteamRootDialog
 		{
 			bgcolor=none
+			minimum-width="1011"		// added, it fits in a 1024x768 screen with the 'Console' tab
 
 			render_bg
 			{
@@ -825,24 +826,24 @@
 		place [$OSX]  { control="account_URL, universe_label" align=right margin-top=1 margin-right=13 spacing=3 }
 		place [$OSX]  { control="account_balance, account_balance_seperator" end-right="account_URL" align=right margin-top=5 margin-right=3 spacing=3 }
 		
-		place [!$OSX] { control="startvr, exitvr, fullscreen" align=right margin-top=20 margin-right=5 spacing=3 }	
-		place [$OSX]  { control="startvr, exitvr, fullscreen" align=right margin-top=20 margin-right=5 spacing=3 }
+		place [!$OSX] { control="startvr, exitvr, fullscreen" align=right margin-top=20 margin-right=1 spacing=3 }	
+		place [$OSX]  { control="startvr, exitvr, fullscreen" align=right margin-top=20 margin-right=1 spacing=3 }
 
-		place [!$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=4 margin-top=14 width=30 region="bigpicture" }
-		place [$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=4 margin-top=14 width=30 region="bigpicture" }
+		place [!$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=1 margin-top=14 width=30 region="bigpicture" }
+		place [$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=1 margin-top=14 width=30 region="bigpicture" }
 
-		place [!$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=5 margin-top=20 }
-		place [$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=5 margin-top=20 }
+		place [!$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=3 margin-top=20 spacing=0 }
+		place [$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=3 margin-top=20 spacing=0 }
 
-		place [!$OSX] { control="exitvr" end-right="fullscreen" align=right margin-right=5 margin-top=20 }
-		place [$OSX] { control="exitvr" end-right="fullscreen" align=right margin-right=5 margin-top=20 }
+		place [!$OSX] { control="exitvr" end-right="fullscreen" align=right margin-right=3 margin-top=20 spacing=0 }
+		place [$OSX] { control="exitvr" end-right="fullscreen" align=right margin-right=3 margin-top=20 spacing=0 }
 
 		place { control="InboxButton" align=right end-right="account_balance" margin-top=-1 margin-right=10 height=26 }
 		place { control="ParentalLockButton" align=right end-right="add_game" margin-top=6 margin-right=10 height=23 }
 		place { control="SupportAlert" align=right end-right="ParentalLockButton" margin-top=3 margin-right=10 height=26 }
 
-		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=2 margin-right=2 spacing=-8 }
-		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=2 margin-left=4 spacing=-8 }
+		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=2 margin-right=0 spacing=-8 }
+		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=2 margin-left=2 spacing=-8 }
 
 		region { name=bottom align=bottom width=max height=16 }
 
