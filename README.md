@@ -14,6 +14,7 @@ Use at your own risk.
 - Graphics : added missing light blue tint when hovering the 3 leftmost titlebar buttons
 - UI/Titlebar : fixed vertical alignment between left, middle and right labels/buttons
 - UI/Titlebar : fixed font styles not matching between left and middle part, plus some more tiny fixes
+- UI/Menu and Main Tabs : all uppercase + categories glow in the library details view
 
 Original ReadMe follows :
 

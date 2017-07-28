@@ -144,7 +144,11 @@
 		
 		ListPanelSectionHeader:hover
 		{     
-			textcolor=texthover
+			textcolor="TitleTextHover"		// was texthover
+			font-style="outerglow"		// added
+			font-outerglow-color="focus"		// added
+			font-outerglow-offset=2		// added
+			font-outerglow-filtersize=3		// added
 		} 
 
 

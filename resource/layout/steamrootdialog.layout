@@ -99,7 +99,6 @@
 			"fieldName"		"account_url"
 			"labelText"	"#Steam_Account_Name"
 			style="AccountURLStyle"
-			showDownArrow=0
 		}
 		
 		account_balance_seperator
@@ -133,13 +132,13 @@
 			style="view_friends"
 			textAlignment=east
 		}
+		
 		online_friends
 		{
 			ControlName=Label
 			labelText="#Steam_OnlineFriends"
 			style="online_friends"
 			textAlignment=east
-			zpos=-1
 		}
 	}
 	
