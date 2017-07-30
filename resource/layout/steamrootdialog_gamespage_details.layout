@@ -321,10 +321,10 @@
 	{
 		region	{ name="list" y=1 x=1 width=265 height=max margin-bottom=2 }
 		region	{ name="details" y=0 x=266 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=0 margin-bottom=3 margin-right=1 }
-		region	{ name="headertext" region=details y=4 x=0 width=805 height=max margin-right=45 }
+		region	{ name="headertext" region=details y=4 x=0 width=max height=max margin-right=125 }
 		
-		region	{ name="rightcolumn" region=details y=97 height=max width=805 overflow=allow-vertical }
-		region  { name="detailsbody" region=details y=100 width=805 margin-right=125 overflow=allow-vertical }
+		region	{ name="rightcolumn" region=details y=97 height=max width=125 align=right overflow=allow-vertical }
+		region  { name="detailsbody" region=details y=100 width=max margin-right=125 overflow=allow-vertical }
 
 		// Empty list text, which goes across regions
 		place	{ control=emptylisttext x=0 y=0 width=max height=max margin=10  margin-left=0}
@@ -358,8 +358,9 @@
 		place 	{ control=headerimageb width=1024 height=768 x=270 y=-9 start="emptylisttext" }
 
 		// Header text
-		place 	{ control=gametitleheader region=headertext dir=down width=690 height=48 margin-right=90 }
-		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down width=690 height=48 margin-right=90 }
+		// 'margin-right=10' from 'margin=10' in 'control=emptylisttext' some lines above
+		place 	{ control=gametitleheader region=headertext dir=down width=max height=48 margin-right=10 }
+		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down width=max height=48 margin-right=10 }
 
 
 		//		Buttons and links on the right
