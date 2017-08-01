@@ -4,10 +4,10 @@
 	{
 		"ControlName"		"CProductMarketingDialog"
 		"fieldName"		"ProductMarketingDialog"
-		"xpos"		"610"
-		"ypos"		"519"
-		"wide"		"708"
-		"tall"		"844"
+		"xpos"		"210"
+		"ypos"		"0"
+		"wide"		"715"
+		"tall"		"738"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
 		"visible"		"0"
@@ -21,10 +21,10 @@
 	{
 		"ControlName"		"HTML"
 		"fieldName"		"HTMLSellPage"
-		"xpos"		"8"
-		"ypos"		"48"
-		"wide"		"692"
-		"tall"		"731"
+		"xpos"		"24"
+		"ypos"		"24"
+		"wide"		"651"
+		"tall"		"712"
 		"AutoResize"		"3"
 		"PinCorner"		"0"
 		"visible"		"1"
@@ -38,8 +38,8 @@
 		"fieldName"		"NextButton"
 		"xpos"		"513"
 		"ypos"		"786"
-		"wide"		"84"
-		"tall"		"24"
+		"wide"		"20"
+		"tall"		"20"
 		"AutoResize"		"0"
 		"PinCorner"		"3"
 		"visible"		"1"
@@ -58,8 +58,8 @@
 		"fieldName"		"PrevButton"
 		"xpos"		"419"
 		"ypos"		"786"
-		"wide"		"84"
-		"tall"		"24"
+		"wide"		"20"
+		"tall"		"20"
 		"AutoResize"		"0"
 		"PinCorner"		"3"
 		"visible"		"1"
@@ -97,12 +97,12 @@
 		"fieldName"		"CloseButton"
 		"xpos"		"608"
 		"ypos"		"786"
-		"wide"		"84"
-		"tall"		"24"
+		"wide"		"51"
+		"tall"		"18"
 		"AutoResize"		"0"
 		"PinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"		"2"
 		"paintbackground"		"1"
 		"labelText"		"#vgui_close"
@@ -114,8 +114,11 @@
 	
 	layout
 	{
-		place { control="HTMLSellPage" margin-top=24 margin-bottom=29 margin-right=1 margin-left=2 width=max height=max }
-		region { name="bottom" align=bottom height=28 }
-		place { control="PrevButton,NextButton,CloseButton" region=bottom align=right margin-top=4 width=84 height=20 spacing=4 margin-right=4 }
+		place { control="HTMLSellPage" margin-top=24 margin-bottom=2 margin-right=23 margin-left=24 width=max height=max }
+		place { control="PrevButton" margin-top=24 margin-bottom=2 margin-left=2 width=20 height=max align=left }
+		place { control="NextButton" margin-top=24 margin-bottom=2 margin-right=2 width=20 height=max align=right }
+		place { control="CloseButton" margin-top=2 width=51 height=18 align=left x=9999 }
+		// "place { control=CloseButton margin-top=2 margin-right=40 width=51 height=18 align=right }"
+		//region { name="bottom" align=bottom height=2 }
 	}
 }

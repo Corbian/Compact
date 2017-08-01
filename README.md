@@ -16,6 +16,7 @@ Use at your own risk.
 - UI/Titlebar : fixed font styles not matching between left and middle part, plus some more tiny fixes
 - UI/Menu and Main Tabs : all uppercase + categories glow in the library details view
 - Library/Detail view : horizontal resize of details panels, right-links staying on right
+- Marketing News window : reworked layout to have lateral Prev/Next buttons and no scrollbars
 
 Original ReadMe follows :
 

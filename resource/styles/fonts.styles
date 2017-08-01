@@ -46,6 +46,10 @@ fonts.styles
 			font-size=12	[$LINUX]
 			font-weight=700	[$LINUX]
 		}
+		"CProductMarketingDialog Button"		// added here to take precedence
+		{										// over the generic 'Button' above
+			font-family=basefontnum
+		}
 		
 		ComboBox
 		{
