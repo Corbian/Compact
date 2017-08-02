@@ -17,6 +17,7 @@ Use at your own risk.
 - UI/Menu and Main Tabs : all uppercase + categories glow in the library details view
 - Library/Detail view : horizontal resize of details panels, right-links staying on right
 - Marketing News window : reworked layout to have lateral Prev/Next buttons and no scrollbars
+- Fonts : re-added 3 glyphes to 'Digits Only' fonts ('/' U+002F ; '<' U+003C ; '>' U+003E)
 
 Original ReadMe follows :
 
