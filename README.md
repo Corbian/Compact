@@ -18,6 +18,7 @@ Use at your own risk.
 - Library/Detail view : horizontal resize of details panels, right-links staying on right
 - Marketing News window : reworked layout to have lateral Prev/Next buttons and no scrollbars
 - Fonts : re-added 3 glyphes to 'Digits Only' fonts ('/' U+002F ; '<' U+003C ; '>' U+003E)
+- UI/Top-Right Corner : color change to show back num. of 'inbox messages' + download status fix.
 
 Original ReadMe follows :
 

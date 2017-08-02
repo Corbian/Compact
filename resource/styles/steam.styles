@@ -1684,6 +1684,7 @@ steam.styles
 			textcolor="TitleText"
 			padding-right=2
 			inset="2 3 2 0"
+			font-style="uppercase"
 		}
 		
 	 	"MenuBar MenuButton:frameFocus" 
@@ -1718,7 +1719,6 @@ steam.styles
 			font-size=13
 			font-weight=650		// was 400
 			bgcolor="none"
-			font-style="uppercase"
 			render_bg {}
 		}  
 		
@@ -2553,7 +2553,7 @@ steam.styles
 		
 		StatusLabelDim
 		{
-			font-family=basefont
+			font-family=basefontnum		// was basefont
 			font-size=13
 			font-weight=100
 			textcolor="TitleText"		// was "label"
@@ -2571,7 +2571,7 @@ steam.styles
 		
 		StatusLabelDim:hover
 		{
-			font-family=basefont
+			font-family=basefontnum			// was basefont
 			font-size=13
 			font-weight=100
 			textcolor="TitleTextHover"		// was "labelfocus"
