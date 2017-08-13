@@ -1,5 +1,5 @@
-This is NOT the official repository for the Steam Compact skin
-==============================================================
+This is NOT the official Steam Compact skin repository
+======================================================
 This -Redux repo include some modifications not tested on MacOS and Linux.
 Use at your own risk.
 
@@ -23,6 +23,7 @@ Oldest `commit` to newest :
 - Fonts: re-added 3 glyphes to `Digits Only` fonts (`/` U+002F ; `<` U+003C ; `>` U+003E)  
 - UI/Top-Right Corner: color change to show back num. of 'inbox messages' + download status fix.  
 - README.md : attempt to use proper Markdown formatting instead of HTML  
+- Merged with upstream @badanka/Compact/commit/b491c535913b67aafb4d5fbe8cf441991843ad0c  
 
 ________________________________
 Compact Skin ReadMe follows:
