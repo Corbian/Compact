@@ -49,6 +49,8 @@ fonts.styles
 		"CProductMarketingDialog Button"		// added here to take precedence
 		{										// over the generic 'Button' above
 			font-family=basefontnum
+			font-size=18
+			font-weight=700
 		}
 		
 		ComboBox

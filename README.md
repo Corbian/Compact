@@ -24,7 +24,8 @@ Oldest `commit` to newest :
 - UI/Top-Right Corner: color change to show back num. of 'inbox messages' + download status fix.  
 - README.md : attempt to use proper Markdown formatting instead of HTML  
 - Merged with upstream @badanka/Compact/commit/b491c535913b67aafb4d5fbe8cf441991843ad0c  
-
+- Library/List, Mini & Music: makes more use of small caps font for categories/headers  
+  
 ________________________________
 Compact Skin ReadMe follows:
 ================================

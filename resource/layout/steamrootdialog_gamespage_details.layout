@@ -129,27 +129,27 @@
 
 		// this definition adds/overwrites the one in 'steam.styles'
 		ListPanelSectionHeader
-		{     
+		{
 			inset="2 0 0 0"
-			textcolor=label
+			textcolor=label		// was offwhite
 			font-family="Alphabet4 SmallCaps"		// was unspecified (presumably herited from 'Label')
-		//	font-weight=400
-			font-size=16
+			font-weight=700
+			font-size=16		// was unspecified
 			render_bg
 			{
-				0="fill( x0+1, y1-2, x0+60, y1-1, focus4  )"
+				0="fill( x0+1, y1-2, x0+60, y1-1, focus4 )"
 				1="gradient_horizontal( x0+60, y1-2, x1-5, y1-1, focus4, none  )"
 			}    
 		} 
 		
 		ListPanelSectionHeader:hover
-		{     
+		{
 			textcolor="TitleTextHover"		// was texthover
 			font-style="outerglow"		// added
 			font-outerglow-color="focus"		// added
 			font-outerglow-offset=2		// added
 			font-outerglow-filtersize=3		// added
-		} 
+		}
 
 
 		"GamesPage_Details ListPanelDragger"
@@ -221,10 +221,10 @@
 		rightcolumnheadertext
 		{
 			inset="-9 0 0 0"
-			font-family=basefonthead
+			font-family="Alphabet4 SmallCaps"		// was basefonthead
 			font-style="outerglow"
 			font-weight=400
-			font-size=15
+			font-size=16		// was 15
 			textcolor=text
 			padding-top=12
 			padding-left=10
@@ -236,10 +236,10 @@
 		rightcolumnheadertext-red
 		{
 			inset="-9 0 0 0"
-			font-family=basefonthead
+			font-family="Alphabet4 SmallCaps"		// was basefonthead
 			font-style="outerglow"
 			font-weight=400
-			font-size=15
+			font-size=16		// was 15
 			textcolor=text
 			padding-top=12
 			padding-left=10
@@ -251,10 +251,10 @@
 		rightcolumnheadertext-green
 		{
 			inset="-9 0 0 0"
-			font-family=basefonthead
+			font-family="Alphabet4 SmallCaps"		// was basefonthead
 			font-style="outerglow"
 			font-weight=400
-			font-size=15
+			font-size=16		// was 15
 			textcolor=text
 			padding-top=12
 			padding-left=10
@@ -266,10 +266,10 @@
 		rightcolumnheadertext-blue
 		{
 			inset="-9 0 0 0"
-			font-family=basefonthead
+			font-family="Alphabet4 SmallCaps"		// was basefonthead
 			font-style="outerglow"
 			font-weight=400
-			font-size=15
+			font-size=16		// was 15
 			textcolor=text
 			padding-top=12
 			padding-left=10
