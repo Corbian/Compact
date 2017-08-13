@@ -508,7 +508,7 @@
 
 		place { control="Divider1" align=top-center width=max margin-left=10 margin-right=10 margin-top=9 start="ChangeContactEmailButton" dir=down }						
 	
-		place { control="BetaParticipationLabel" x=10 y=159  width=max end-right="CurrentBetaLabel" }
+		place { control="BetaParticipationLabel" x=10 y=159  width=105 end-right="CurrentBetaLabel" }
 		
 		place { control="CurrentBetaLabel" margin-left=120 y=159 width=max }
 		place { start=CurrentBetaLabel control="ChangeBetaButton" y=6 width=76 height=20 dir=down }

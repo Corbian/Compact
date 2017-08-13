@@ -37,14 +37,14 @@
 	{
 		region { name=box margin-top=6 margin-bottom=20 margin-left=10 margin-right=10 width=max height=max }
 		
-		place { control=SteamCloudInfo region=box width=310 }
+		place { control=SteamCloudInfo region=box width=max }		// was width=310
 		place
 		{ 
 			control="EnableCloudCheck" 
 			start = "SteamCloudInfo"
 			region=box 
 			dir=down 
-			height=18
+			height=32		// was 18
 			width=max
 			y=1
 		}
@@ -54,7 +54,7 @@
 			start = "EnableCloudCheck"
 			region=box 
 			dir=down 
-			height=36
+			height=32		// was 36
 			width=max
 			y=-3
 		}		
