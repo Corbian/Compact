@@ -22,7 +22,7 @@
 			render_bg
 			{     
 				0="fill( x0+1, y0+1, x0+270, y1-1, FrameBG2_trans )"
-				1="gradient_horizontal( x0+270, y0+1, x1-1, y1-1, FrameBG2_trans, FrameBG2_trans )"
+				1="fill( x0+270, y0+1, x1-1, y1-1, FrameBG2_trans )"
 				2="image( x0+1, y0+1, x0+262, y0+98, graphics/libdet_corner_trans )"
 
 				3="gradient_horizontal( x0, y0, x1, y0 + 1, ExBorderLight, ExBorderLowLight )"  // top

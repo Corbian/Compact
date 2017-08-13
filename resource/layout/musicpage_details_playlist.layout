@@ -45,11 +45,11 @@
 			padding-top=8
 			padding-left=10
 			padding-right=10
-			font-size=24
-			textcolor=Text
-			font-family=basefontheader
-			font-weight=400 
-			bgcolor=FrameBG2
+			font-size=28		// was 24
+			textcolor="TitleTextFocus"		// was Text
+			font-family="Alphabet4 SmallCaps"		// was basefontheader
+			font-weight=700		//was 400 
+			bgcolor=none	//was FrameBG2
 		}
 
 		TracksInfoLabelStyle

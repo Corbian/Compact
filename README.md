@@ -25,7 +25,8 @@ Oldest `commit` to newest :
 - README.md : attempt to use proper Markdown formatting instead of HTML  
 - Merged with upstream @badanka/Compact/commit/b491c535913b67aafb4d5fbe8cf441991843ad0c  
 - Library/List, Mini & Music: makes more use of small caps font for categories/headers  
-- Settings/Cloud & Account: small size tweaks for longer translated texts
+- Settings/Cloud & Account: small size tweaks for longer translated texts  
+- Library/Details & Music: transparency and font fixes  
   
 ________________________________
 Compact Skin ReadMe follows:
