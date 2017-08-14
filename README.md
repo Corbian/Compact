@@ -27,6 +27,7 @@ Oldest `commit` to newest :
 - Library/List, Mini & Music: makes more use of small caps font for categories/headers  
 - Settings/Cloud & Account: small size tweaks for longer translated texts  
 - Library/Details & Music: transparency and font fixes  
+- UI/Top-Right Corner: downarrow on account name is gone  
   
 ________________________________
 Compact Skin ReadMe follows:

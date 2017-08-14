@@ -749,6 +749,7 @@
 		      font-size=13
 		      font-weight=400
 		      font-style=regular
+			  padding-right=-14		// added to hide the downarrow
 		}
 		
 		AccountURLStyle [$OSX]		// added
@@ -760,6 +761,7 @@
 			font-weight=400
 			font-style=regular
 			inset="0 1 0 0"
+			padding-right=-14		// added to hide the downarrow
 		}
     
 		AccountURLStyle:hover
