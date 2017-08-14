@@ -28,6 +28,7 @@ Oldest `commit` to newest :
 - Settings/Cloud & Account: small size tweaks for longer translated texts  
 - Library/Details & Music: transparency and font fixes  
 - UI/Top-Right Corner: downarrow on account name is gone  
+- Library/Details view: replaced dirty corner image by a smoother gradient  
   
 ________________________________
 Compact Skin ReadMe follows:
